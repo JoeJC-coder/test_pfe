@@ -30,4 +30,9 @@ private studentRepository studentRepository;
     public void deleteStudentbyid(int id) {
         studentRepository.deleteById(id);
     }
+
+    @Override
+    public Student updateStudentbyid(Student student) {
+        return studentRepository.save(student);
+    }
 }
