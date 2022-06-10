@@ -10,4 +10,5 @@ public interface StudentService {
     public List<Student> getAllStudents();
     public Optional<Student> getStudentbyid(int id);
     public void deleteStudentbyid(int id);
+    public Student updateStudentbyid(Student student);
 }
